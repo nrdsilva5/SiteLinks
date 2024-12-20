@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AABAMINA - Segurança</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 360px;
+            background-color: #f2f4f8;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo e títulos */
+        .logo img {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+		
+		.page-title {
+            font-size: 14px; /* Tamanho da fonte ajustado */
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000080;
+        }
+
+        /* Botões de navegação */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000080; 
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .button span {
+            flex: 1;
+            text-align: left;
+        }
+
+        .button .menu-icon {
+            color: #999999;
+            font-size: 18px;
+        }
+
+        /* Botão de voltar */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            filter: invert(22%) sepia(85%) saturate(747%) hue-rotate(194deg) brightness(94%) contrast(86%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Mensagem no final */
+        .footer-message {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão de voltar -->
+    <a href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Voltar para a página inicial" class="back-button">
+    </a>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://github.com/nrdsilva5/imagens/blob/main/logo%20anglo%201.png?raw=true" alt="Logo">
+        </div>
+
+		<!-- Nome da página -->
+        <div class="page-title">Segurança</div>
+
+        <!-- Botões -->
+        <div class="button-container">
+		
+			<a href="ContatoEmergencia.html" class="button">
+                <img src="https://www.pinclipart.com/picdir/big/228-2285409_personal-injury-auto-accidents-clipart.png" alt="emergencia">
+                <span>Contato Ambulatório Médico</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://isometrix.ssd.angloamerican.com/" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/isometrix.png?raw=true" alt="IsoMetrix">
+                <span>IsoMetrix</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=nfZkKMN3vk-7wJdQIFI5Gh0obcha-x9ErpPtRxGYa61UN01FNTI4MlVTMjM4Nk03VFRWUE5PVEdFTC4u" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/atitude.jpg?raw=true" alt="atitude">
+                <span>Forms Atitude</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.smartsheet.com/b/publish?EQBCT=e3d8aed9d2f94cbd877547ed15f16bd5" class="button">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.s-z7LnZdMdMcJlRWrRYMpgHaHu?rs=1&pid=ImgDetMain" alt="anglo">
+                <span>Painel de Ferramentas da segurança</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://portalcontratadasanglo.xlsolucoes.com.br/index.php?message=Por%20favor,%20informe%20suas%20credenciais%20de%20acesso%20para%20prosseguir!&bg=%20bg-info%20text-white" class="button">
+                 <img src="https://companieslogo.com/img/orig/AAL.L-32934a3d.png?t=1649757032" alt="">
+                <span>Portal Contratadas - Inspeção de veiculos e concessões</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.powerbi.com/groups/me/apps/731d0a34-71b7-424d-83e3-64d5784cb704/reports/625f475f-14a5-4c1c-aca1-d7f872fe9ac2/ReportSection?ctid=2864f69d-77c3-4fbe-bbc0-97502052391a&experience=power-bi" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/poweBI.png?raw=true" alt="powerbi">
+                <span>Power BI - Anglo American Brasil - Segurança</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.powerbi.com/groups/me/apps/f448c5c3-a40f-4a08-9a8a-16fb5e2a2887/reports/237a72e3-58b0-49b7-8fcd-fc71fd9c70c7/ReportSection774d3b7b7d6e2c24b96e?ctid=2864f69d-77c3-4fbe-bbc0-97502052391a&experience=power-bi" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/poweBI.png?raw=true" alt="POWERBI">
+                <span>Power BI - Segurança, Risco e Resposta a emergência</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.powerbi.com/groups/me/apps/f6486df1-f7bd-4a3d-b96e-568844a8bd92/reports/4312b51e-a7e8-4cc2-9578-5c8370d82811/ReportSectiona8cdccfd116c7470704a?ctid=2864f69d-77c3-4fbe-bbc0-97502052391a&experience=power-bi" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/poweBI.png?raw=true" alt="POWERBI">
+                <span>Power BI - Alerta de Fadiga</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.powerbi.com/groups/me/apps/815f53dc-3521-431b-a876-1311f8e091a3/reports/8177b27b-2328-42f1-9f9d-25468ee89c46/ReportSection?ctid=2864f69d-77c3-4fbe-bbc0-97502052391a&experience=power-bi" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/poweBI.png?raw=true" alt="POWERBI">
+                <span>Power BI - Housekeeping</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			
+        </div>
+    </div>
+	 <!-- Mensagem fora do contêiner -->
+    <div class="footer-message">
+        <p>Erro de acesso a aplicação, contatar o administrador responsável.</p>
+		<p>Erro no site de Links, contatar (62) 3347-6972 </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AABAMINA - RH</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 180vh;
+        }
+
+        .container {
+            width: 360px;
+            background-color: #f2f4f8;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo e títulos */
+        .logo img {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+		
+		.page-title {
+            font-size: 14px; /* Tamanho da fonte ajustado */
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000080;
+        }
+
+        /* Botões de navegação */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000080; 
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .button span {
+            flex: 1;
+            text-align: left;
+        }
+
+        .button .menu-icon {
+            color: #999999;
+            font-size: 18px;
+        }
+
+        /* Botão de voltar */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            filter: invert(22%) sepia(85%) saturate(747%) hue-rotate(194deg) brightness(94%) contrast(86%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Mensagem no final */
+        .footer-message {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão de voltar -->
+    <a href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Voltar para a página inicial" class="back-button">
+    </a>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://github.com/nrdsilva5/imagens/blob/main/logo%20anglo%201.png?raw=true" alt="Logo">
+        </div>
+
+		<!-- Nome da página -->
+        <div class="page-title">Recursos Humanos</div>
+
+        <!-- Botões -->
+        <div class="button-container">
+			<a href="https://apps.powerapps.com/play/e/default-2864f69d-77c3-4fbe-bbc0-97502052391a/a/7e21e611-d397-4fe2-9624-5e7d9663d45e?tenantId=2864f69d-77c3-4fbe-bbc0-97502052391a&source=AppSharedToContributorV2&hint=0d692b45-b121-4431-9081-097cb046fa1f" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/PowerApps.png?raw=true" alt="PowerApps">
+                <span>Adicional Substituição</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://bit.ly/3xzhkWn" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/cartilha.png?raw=true" alt="Cartilha de Benefícios">
+                <span>Cartilha de Benefícios</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.powerbi.com/groups/me/apps/96588549-b3b0-4ec7-b29e-8e6a683cfd42/reports/85484c2b-4345-43c0-bfbe-131d53d55350/ReportSection?ctid=2864f69d-77c3-4fbe-bbc0-97502052391a&experience=power-bi" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/poweBI.png?raw=true" alt="powerBI">
+                <span>Dashboard Treinamentos</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://degreed.com/account/login?ReturnUrl=%2Fdanielatomazdearaujo%2Fdashboard" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/lean.jpg?raw=true" alt="lean">
+                <span>Degreed | Learn+</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://www.angloamerican.app/#/app/home" class="button">
+                <img src="https://companieslogo.com/img/orig/AAL.L-32934a3d.png?t=1649757032" alt="anglo">
+                <span>Engage</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://angloamerican.sharepoint.com/sites/ESH-002/SitePages/MyShare.aspx#upload" class="button">
+                <img src="https://play-lh.googleusercontent.com/f5m1W5yi3SvVsScU43CHGqjp_YbEDnPELYDqGk-Uwv5heB-BXvScQGeYa74lAq26Xgw" alt="sharepoint">
+                <span>MyShare</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://performancemanager5.successfactors.eu/sf/home?bplte_company=angloamer&_s.crb=iHIC7Y0ZkvvggpHzZaTZ67ptrOEJrI%2fH6vR2huID5Kw%3d" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/navigator.png?raw=true" alt="navigator">
+                <span>Navigator+</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.powerbi.com/groups/me/apps/9fbd6258-6da8-4a36-92f8-c47909ee9ee0/reports/994ae350-364c-4bc8-9c91-13d5f544f209/ReportSection33162e88ce85606b3b9e?experience=power-bi" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/poweBI.png?raw=true" alt="POWERBI">
+                <span>Power BI - Relações Trabalhistas</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://angloamerican.sharepoint.com/sites/PortalEmpregadosBrasil" class="button">
+                <img src="https://play-lh.googleusercontent.com/f5m1W5yi3SvVsScU43CHGqjp_YbEDnPELYDqGk-Uwv5heB-BXvScQGeYa74lAq26Xgw" alt="sharepoint">
+                <span>Portal do Empregado</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://aaol.outsystemsenterprise.com/MovimentacaoPessoal/AcompanhamentoSolicitacoes" class="button">
+                <img src="https://companieslogo.com/img/orig/AAL.L-32934a3d.png?t=1649757032" alt="anglo">
+                <span>Portal de Movimentações</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://hclangloprod.service-now.com/aa?id=aa_home" class="button">
+                <img src="https://companieslogo.com/img/orig/AAL.L-32934a3d.png?t=1649757032" alt="anglo">
+                <span>Portal de Solicitações</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.smartsheet.com/b/home?dlp=%2Fsheets%2FmccRg86GcjCm9vpVHqcxQGjR9wVm9MqgCPJvPff1&dlq=view%3Dgrid" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/adas.png?raw=true" alt="adas">
+                <span>Reportes ADAS</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://www.convercent.com/" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/conflitoInt.png?raw=true" alt="Conflito">
+                <span>Registro Conflito de Interesses</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://fiori.angloamerican.com/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=300#Shell-home" class="button">
+                <img src="https://companieslogo.com/img/orig/AAL.L-32934a3d.png?t=1649757032" alt="anglo">
+                <span>Registro de Exceção Ponto / Holerite</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://chat.whatsapp.com/CP6Hueml5n558NXViDAZgL" class="button">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.zDpQqs5wHFFRH8LBZ1gWbQHaHa?w=720&h=720&rs=1&pid=ImgDetMain" alt="zap">
+                <span>Recados e Vagas externas</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://www.smartrecruiters.com/account/sign-in?redir=%2Fapp%2Fjobs%2Fall" class="button">
+                <img src="https://media.licdn.com/dms/image/C560BAQFRc4dCtsJv2A/company-logo_200_200/0?e=2159024400&v=beta&t=9Gwr1gZinzNdN8S9LkEsThzbCp3UabxQD0D4FWr-uZU" alt="">
+                <span>Smart Recruiter</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://aaprod.service-now.com/esc" class="button">
+                <img src="https://companieslogo.com/img/orig/AAL.L-32934a3d.png?t=1649757032" alt="anglo">
+                <span>Service Now (Férias / Alteração Turno)</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://apps.powerapps.com/play/e/default-2864f69d-77c3-4fbe-bbc0-97502052391a/a/c5ffe5d5-67ff-4c13-a4ae-99befff6c4bd?tenantId=2864f69d-77c3-4fbe-bbc0-97502052391a" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/PowerApps.png?raw=true" alt="PowerApps">
+                <span>Solicitação Mudança Contrato de Trabalho</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://www.angloamerican.com/careers/job-opportunities/apply" class="button">
+                <img src="https://companieslogo.com/img/orig/AAL.L-32934a3d.png?t=1649757032" alt="anglo">
+                <span>Vagas em aberto</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+		
+        </div>
+    </div>
+	 <!-- Mensagem fora do contêiner -->
+    <div class="footer-message">
+        <p>Erro de acesso a aplicação, contatar o administrador responsável.</p>
+		<p>Erro no site de Links, contatar (62) 3347-6972 </p>
+    </div>
+</body>
+</html>

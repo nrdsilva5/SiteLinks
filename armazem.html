@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AABAMINA - Armazem / Cadastro</title>
+      <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 360px;
+            background-color: #f2f4f8;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo e títulos */
+        .logo img {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+		
+		 .page-title {
+            font-size: 14px; /* Tamanho da fonte ajustado */
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000080;
+        }
+
+        /* Botões de navegação */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000080; 
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .button span {
+            flex: 1;
+            text-align: left;
+        }
+
+        .button .menu-icon {
+            color: #999999;
+            font-size: 18px;
+        }
+
+        /* Botão de voltar */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            filter: invert(22%) sepia(85%) saturate(747%) hue-rotate(194deg) brightness(94%) contrast(86%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Mensagem no final */
+        .footer-message {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão de voltar -->
+    <a href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Voltar para a página inicial" class="back-button">
+    </a>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://github.com/nrdsilva5/imagens/blob/main/logo%20anglo%201.png?raw=true" alt="Logo">
+        </div>
+
+		<!-- Nome da página -->
+        <div class="page-title">Armazém / Cadastro</div>
+
+        <!-- Botões -->
+        <div class="button-container">
+            
+			<a href="https://www.portalctf.com.br/PortalCTF/AutenticacaoUsuario.aspx?ReturnUrl=%2fPortalCTF%2fMainPage.aspx" class="button">
+                <img src="https://logodix.com/logo/1937455.png" alt="">
+                <span>CTF</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://forms.office.com/e/wrsRYembRD" class="button">
+                <img src="https://seeklogo.com/images/M/microsoft-forms-logo-E43199A9D4-seeklogo.com.png" alt="">
+                <span>Cadastro de Veículos</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://apps.powerapps.com/play/e/default-2864f69d-77c3-4fbe-bbc0-97502052391a/a/e002cac7-6f5e-4050-841a-1b19ec9e2e43?tenantId=2864f69d-77c3-4fbe-bbc0-97502052391a&source=AppSharedV3&hint=6b384ae0-1cbc-4f8a-8c8a-6bada33d0404&sourcetime=1724854632998" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/PowerApps.png?raw=true" alt="PowerApps">
+                <span>Fluxo Materiais</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://apps.powerapps.com/play/e/default-2864f69d-77c3-4fbe-bbc0-97502052391a/a/6c6e9916-2429-4d5a-807b-8a94adc51f55?tenantId=2864f69d-77c3-4fbe-bbc0-97502052391a&source=AppSharedV3&hint=d45e7f32-5d59-4274-b6f3-bd7f01f333a8&sourcetime=1724853664781" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/PowerApps.png?raw=true" alt="PowerApps">
+                <span>Gestão de Represamentos"</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://monitor.oobj-dfe.com.br/#!/login" class="button">
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHGj4_GsasyRA/company-logo_200_200/company-logo_200_200/0/1722261229429?e=2147483647&v=beta&t=r0hfrDevbvtta39r9rKZRi3pRPaQ0JilV16Ov4QT_yY" alt="">
+                <span>OOBJ - Documento Fiscal Eletrônico</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://aadqh.pilogcloud.com:8443/MDRM/" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/pilog.png?raw=true" alt="pitlog">
+                <span>PiLog</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://apps.powerapps.com/play/e/default-2864f69d-77c3-4fbe-bbc0-97502052391a/a/9ca972cf-17e5-4287-8ca0-76068f6f0ee3?tenantId=2864f69d-77c3-4fbe-bbc0-97502052391a&source=AppSharedV3&hint=121b7719-14af-4dcf-b6e3-0b97cddd4f30" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/PowerApps.png?raw=true" alt="PowerApps">
+                <span>Requisição de Emissão de Nota Fiscal - Niquel</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			
+			
+        </div>
+    </div>
+	<!-- Mensagem fora do contêiner -->
+    <div class="footer-message">
+        <p>Erro de acesso a aplicação, contatar o administrador responsável.</p>
+		<p>Erro no site de Links, contatar (62) 3347-6972 </p>
+    </div>
+</body>
+</html>

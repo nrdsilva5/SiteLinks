@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AABAMINA - Página Principal</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 170vh;
+            flex-direction: column; /* Alinha o conteúdo na vertical */
+        }
+
+        .container {
+            width: 360px;
+            background-color: #f2f4f8;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo e títulos */
+        .logo img {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+
+        /* Botões de navegação */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000080; 
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .button span {
+            flex: 1;
+            text-align: left;
+        }
+
+        .button .menu-icon {
+            color: #999999;
+            font-size: 18px;
+        }
+
+        /* Estilo para a mensagem fora do container */
+        .message {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://github.com/nrdsilva5/imagens/blob/main/logo%20anglo%201.png?raw=true" alt="Logo">
+        </div>
+
+        <!-- Botões -->
+        <div class="button-container">
+            <a href="ADM.html" class="button">
+                <span>Administração</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="armazem.html" class="button">
+                <span>Armazém / Cadastro</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="CPM.html" class="button">
+                <span>CPM - Gerenciamento de Performance de Contratadas</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="ExcelenciaOP.html" class="button">
+                <span>Excelência Operacional</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="Financeiro.html" class="button">
+                <span>Financeiro / Fiscal</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="Geotecnia.html" class="button">
+                <span>Geotecnia</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="Manutencao.html" class="button">
+                <span>Manutenção</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="ProducaoMina.html" class="button">
+                <span>Produção de Mina</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="RH.html" class="button">
+                <span>Recursos Humanos</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="SGI.html" class="button">
+                <span>SGI - Sistemas de gestão Integrado</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="ServicosTecnicos.html" class="button">
+                <span>Serviços Técnicos</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="ServicosMina.html" class="button">
+                <span>Serviços de Mina</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="IIT.html" class="button">
+                <span>Suporte Técnico</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="Seguranca.html" class="button">
+                <span>Segurança</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			
+        </div>
+    </div>
+
+    <!-- Mensagem fora do contêiner -->
+    <div class="message">
+        <p>Erro de acesso a aplicação, contatar o administrador responsável.</p>
+		<p>Erro no site de Links, contatar (62) 3347-6972 </p>
+    </div>
+</body>
+</html>

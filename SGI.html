@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AABAMINA - SGI</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 360px;
+            background-color: #f2f4f8;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo e títulos */
+        .logo img {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+		.page-title {
+            font-size: 14px; /* Tamanho da fonte ajustado */
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000080;
+        }
+
+        /* Botões de navegação */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000080; 
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .button span {
+            flex: 1;
+            text-align: left;
+        }
+
+        .button .menu-icon {
+            color: #999999;
+            font-size: 18px;
+        }
+
+        /* Botão de voltar */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            filter: invert(22%) sepia(85%) saturate(747%) hue-rotate(194deg) brightness(94%) contrast(86%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Mensagem no final */
+        .footer-message {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão de voltar -->
+    <a href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Voltar para a página inicial" class="back-button">
+    </a>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://github.com/nrdsilva5/imagens/blob/main/logo%20anglo%201.png?raw=true" alt="Logo">
+        </div>
+
+		<!-- Nome da página -->
+        <div class="page-title">Sistemas de Gestão Integrado</div>
+
+        <!-- Botões -->
+        <div class="button-container">
+			<a href="https://www.gedweb.com.br/home/ja-sou-usuario.asp" class="button">
+                <img src="https://www.gedweb.com.br/home/images/icone_app_android_gedweb.png" alt="GedWeb">
+                <span>GedWeb</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="https://angloamerican.sharepoint.com/sites/SC06/AngloDocIOB/NPB/Pages/HomePage.aspx?xsdata=MDV8MDJ8fGQyY2JjM2VlZmE0NTQwNWRiMDM1MDhkYzRmMmM1MDQzfDI4NjRmNjlkNzdjMzRmYmViYmMwOTc1MDIwNTIzOTFhfDB8MHw2Mzg0NzIyOTg5MjM1NDE0Mjh8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZO" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/governancia1.png?raw=true" alt="Governança1">
+                <span>Portal da Governança</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://app.powerbi.com/groups/me/apps/98c5f4a2-21c3-462c-9bfd-50bf0be7fa8e/reports/b8986992-868c-440a-8ce5-a37d4e395036/ReportSection4c76dba7cc17c56a96b9?experience=power-bi" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/poweBI.png?raw=true" alt="POWERBI">
+                <span>Power BI - SGI</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="https://isometrix.ssd.angloamerican.com/" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/isometrix.png?raw=true" alt="IsoMetrix">
+                <span>IsoMetrix</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+			<a href="https://beta.rochacerqueira.adv.br/" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/qualifica.png?raw=true" alt="qualifica">
+                <span>Qualifica NG - Requisitos Legais</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+            <a href="https://angloniquel.softexpert.com/softexpert/login?page=execution,174,11" class="button">
+                <img src="https://github.com/nrdsilva5/imagens/blob/main/softsuite.jpg?raw=true" alt="softsuite">
+                <span>SoftExpert Suite 2.2</span>
+                <div class="menu-icon">⋮</div>
+            </a>
+        </div>
+    </div>
+	 <!-- Mensagem fora do contêiner -->
+    <div class="footer-message">
+        <p>Erro de acesso a aplicação, contatar o administrador responsável.</p>
+		<p>Erro no site de Links, contatar (62) 3347-6972 </p>
+    </div>
+</body>
+</html>
